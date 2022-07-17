@@ -12,8 +12,8 @@ html, body {
 	padding: 0;
 	margin: 0;
 	height: 100%;
-	font-size: 14px;
-	font-family: 'Helvetica Neue', Arial, sans-serif;
+	font-size: 18px;
+	font-family: 'Open Sans', Arial, Tahoma;
 	line-height: 1.4;
 	min-width: 320px
 }
@@ -51,14 +51,21 @@ ul, li {
 .profile-link {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 }
 
 .profile-link img {
 	margin-right: 5px;
 }
 
-.skills {
+.skills-container {
 	margin-top: 8px;
+}
+
+.skills {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .separator {
@@ -70,10 +77,15 @@ ul, li {
 	flex-direction: column;
 	height: 95%;
 	position: fixed;
-	left: calc(50% - 425px);
+	left: calc(50% - 493px);
 	padding: 0px 14px;
 	top: 55px;
-    width: 260px;
+    width: 296px;
+}
+
+.employment-summary {
+	margin-bottom: 4px;
+	margin-top: 4px;
 }
 
 .summary .profile_photo {
@@ -197,14 +209,14 @@ ul, li {
 .content-wrapper .summary-wrapper {
 	background-color: rgb(245, 245, 245);
 	flex-shrink: 0;
-	width: 260px
+	width: 296px
 }
 
 .content-wrapper .body-wrapper {
 	flex-shrink: 0;
 	margin-left: 16px;
 	margin-bottom: 16px;
-    width: 580px;
+    width: 674px;
 }
 
 .content-wrapper .body-wrapper .head-title {
