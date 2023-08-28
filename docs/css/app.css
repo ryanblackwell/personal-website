@@ -234,6 +234,10 @@ ul, li {
 	text-align: center
 }
 
+li:not(:last-child) {
+	margin-bottom: 2px;
+}
+
 @media only screen and (max-width: 1000px) {
 	.summary {
 		position: static;
