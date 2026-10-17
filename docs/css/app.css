@@ -12,9 +12,10 @@ html, body {
 	padding: 0;
 	margin: 0;
 	height: 100%;
-	font-size: 18px;
+	font-size: 16px;
 	font-family: 'Open Sans', Arial, Tahoma;
-	line-height: 1.4;
+	line-height: 1.5;
+	color: #222;
 	min-width: 320px
 }
 
@@ -74,8 +75,7 @@ ul, li {
 }
 
 .employment-summary {
-	margin-bottom: 4px;
-	margin-top: 4px;
+	margin-top: 6px;
 }
 
 .summary .profile_photo {
@@ -92,14 +92,20 @@ ul, li {
 }
 
 .summary .desc .name {
-	font-size: 20px;
-	font-weight: 600;
-	margin-bottom: 14px;
+	font-size: 22px;
+	font-weight: 700;
+	margin-bottom: 0;
 	text-align: center
 }
 
 .summary .desc .meta {
-	font-weight: 500
+	color: #555;
+	margin-bottom: 14px;
+	text-align: center
+}
+
+.summary .desc .meta strong {
+	font-weight: 400
 }
 
 .summary .desc .contact {
@@ -131,7 +137,15 @@ ul, li {
 }
 
 .employment {
-	margin-bottom: 7px
+	margin-bottom: 26px
+}
+
+.employment:last-child {
+	margin-bottom: 0
+}
+
+.degree:not(:last-child) {
+	margin-bottom: 10px
 }
 
 .employment .desc .item-2 {
@@ -169,18 +183,34 @@ ul, li {
 }
 
 .timeline .timeline-section {
-	margin-bottom: 29px
+	margin-bottom: 36px
 }
 
 .timeline .section-title {
+	font-size: 20px;
+	font-weight: 700;
+	padding-bottom: 6px;
+	border-bottom: 1px solid #e3e3e3;
+	margin-bottom: 16px
+}
+
+.timeline .title {
 	font-size: 17px;
-	font-weight: bold;
-	margin-bottom: 8px
+	font-weight: 600
+}
+
+.timeline .meta {
+	color: #555;
+	font-size: 14px
 }
 
 .timeline .url {
-	font-size: 12px;
-	margin-bottom: 2px
+	font-size: 13px
+}
+
+.timeline .url a,
+.timeline .url a:visited {
+	color: #555
 }
 
 .content-wrapper {
