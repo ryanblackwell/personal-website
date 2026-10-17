@@ -58,16 +58,6 @@ ul, li {
 	margin-right: 5px;
 }
 
-.skills-container {
-	margin-top: 8px;
-}
-
-.skills {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
 .separator {
 	margin: 0 5px
 }
