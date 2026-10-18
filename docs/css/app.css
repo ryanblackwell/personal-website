@@ -66,11 +66,7 @@ ul, li {
 .summary {
 	display: flex;
 	flex-direction: column;
-	height: 95%;
-	position: fixed;
-	left: calc(50% - 493px);
-	padding: 0px 14px;
-	top: 55px;
+	padding: 6px 14px 0;
     width: 296px;
 }
 
@@ -84,7 +80,7 @@ ul, li {
 
 .summary .profile_photo > img {
 	clip-path: circle(48.5%);
-	width: 95%
+	width: 85%
 }
 
 .summary .desc {
@@ -241,8 +237,12 @@ ul, li {
 }
 
 .content-wrapper .summary-wrapper {
+	align-self: flex-start;
 	background-color: rgb(245, 245, 245);
 	flex-shrink: 0;
+	height: calc(100vh - 30px);
+	position: sticky;
+	top: 15px;
 	width: 296px
 }
 
@@ -294,7 +294,9 @@ li:not(:last-child) {
 
 	.content-wrapper .summary-wrapper {
 		display: flex;
+		height: auto;
 		justify-content: center;
+		position: static;
 		width: 100%
 	}
 
